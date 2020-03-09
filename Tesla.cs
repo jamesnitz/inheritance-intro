@@ -10,7 +10,15 @@ namespace inheritanceIntro
 
     public override void Drive()
     {
-      Console.WriteLine("Rumble Rumble");
+      Console.WriteLine($"Rumble Rumble goes the {MainColor} {Name}");
+    }
+    public override void Turn(string direction)
+    {
+      Console.WriteLine($"The {MainColor} {Name} is {direction}");
+    }
+    public override void Stop()
+    {
+      Console.WriteLine($"The {MainColor} {Name} stopped its battery");
     }
     public override string ToString()
     {
